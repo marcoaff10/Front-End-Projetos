@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background: rgb(225, 225, 225);
+}
+
+.clear{clear: both;}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.logo{
+    float: left; 
+}
+
+.logo img{max-width: 100%;}
+
+.menu{
+    float: right;
+    margin-top: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+.menu a.btn-cta{
+    background: #30851d;
+    color: white;
+    font-size: 17px;
+    padding: 10px 25px;
+}
+
+.topo{
+    background: white;
+    padding: 100px 0;
+}
+
+.topo > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto-topo{
+    width: 50%;
+    padding: 0 20px;
+    color: #11223f;
+}
+
+.texto-topo h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto-topo p{font-size: 20px;}
+
+.img-topo{width: 50%;}
+
+.img-topo img{max-width: 100%;}
+
+/*depoimentos*/
+.depoimentos{
+    padding: 60px 0;
+}
+
+.depoimentos > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.depoimento-single{
+    background-color: white;
+    background-image: url('../images/quote.png');
+    background-size: 66px 53px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding: 30px;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.depoimento-single p{
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+.depoimento-single span{
+    color: green;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/*sobre*/
+.sobre{
+    padding: 60px 0;
+}
+
+.titulo-sobre h2{
+    color: black;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-bottom: 3px solid #2bb222;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-single{
+    width: 33.3%;
+    padding: 40px 20px;
+}
+
+.titulo-single{display: flex;}
+
+.titulo-single i{
+    background-color: #2bb222;
+    width: 20%;
+    padding-top: 23px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.titulo-single h3{
+    color: black;
+    background-color: #f1f6f1;
+    width: 80%;
+    margin: 0;
+    padding: 20px;
+}
+
+.sobre-conteudo{
+    background-color: white;
+    font-size: 17px;
+    padding: 15px;
+}
+
+footer{
+    background-color: #effeee;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .texto-topo,
+    .img-topo,.img-topo img{
+        width: 100%;
+    }
+
+    .depoimento-single{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .sobre-single{width: 100%;}
+}
+
+@media screen and (max-width: 640px){
+    .menu .btn-cta{
+        display: block;
+        margin-top: 10px;
+    }
+}

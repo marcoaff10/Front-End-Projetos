@@ -1,0 +1,363 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body{
+    height: 100%;
+}
+/*fim reset*/
+
+/*Classes auxiliares*/
+.center{
+    margin: 0 auto;
+    max-width: 1920px;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+/*Fim classes auxiliares*/
+
+/*section main*/
+
+.layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.main{
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding: 15px 2%;
+    min-height: 1000px;
+}
+    
+.main header{
+    z-index: 2;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2ce;
+}
+
+.icons-social{
+    margin-bottom: 10px;
+    float: right;
+}
+
+.icons-social a{
+    color: #f2f2ce;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.logo{
+    margin-top: 20px;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f2f2ce;
+}
+
+.desktop{
+    margin-top: 20px;
+    float: right;
+}
+
+.desktop ul{
+    list-style-type: none;
+}
+
+.desktop ul li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.desktop a{
+    color: #f2f2ce;
+    text-decoration: none;
+}
+
+.conteudo-header{
+    position: relative;
+    z-index: 2;
+    margin: 100px 0;
+    max-width: 1000px;
+}
+
+.conteudo-header h2{
+    font-size: 45px;
+    font-weight: lighter;
+    color: #f2f2ce;
+}
+
+.conteudo-header h2 > span{
+    color: #2692ff;
+}
+
+.conteudo-header p{
+    color: #f2f2ce;
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.conteudo-header a{
+    display: block;
+    width: 177px;
+    height: 44px;
+    line-height: 44px;
+    background: #2692ff;
+    color: #f2f2ce;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+/*fim section main*/
+
+/*section planos*/
+
+.chamadas-planos{
+    width: 100%;
+    text-align: center;
+    padding: 25px 2%;
+    background: rgb(220, 220, 220);
+}
+
+.chamadas-planos h2{
+    display: inline-block;
+    border-top: 2px solid #2692ff;
+    color: #2692ff;
+    font-size: 25px;
+    font-weight: lighter;
+}
+/*fim section planos*/
+
+/*section box-planos*/
+.box-planos{
+    padding: 40px 2%;
+}
+
+.box-planos > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-planos-single{
+    width: 33.3%;
+    padding: 0 40px;
+}
+
+.box-planos-wraper{
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 300px;
+    box-shadow: 10px 9px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+.box-planos-single h2{
+    background: #2692ff;
+    color: #f2f2ce;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.pontos-planos{
+    padding: 8px 0 15px 0;
+}
+
+.box-planos-single p{
+    color: #141405;
+    font-size: 17px;
+    margin-top: 8px;
+    margin-left: 20px; 
+}
+
+.preco{
+    margin-top: 10px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.preco h2{
+    font-size: 25px;
+    padding: 0 20px;
+    color: #141405;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.box-planos-single i{
+    padding: 0 10px;
+}
+/*fim section box-planos*/
+
+/*section parallax*/
+.parallax{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    background-image: url('../images/bg_parallax.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax > .center{
+    position: relative;
+    z-index: 2;
+    margin: 40px auto;
+    max-width: 960px;
+    color: #f2f2ce;
+
+}
+
+.parallax h2{
+    font-size: 35px;
+    padding: 20px 0;
+    color: #f2f2ce;
+}
+
+.parallax p{
+    font-size: 17px;
+    padding-bottom: 20px ;
+    color: #f2f2ce;
+}
+
+.parallax h2{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.overlaw-parallax{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.6);
+}
+/*fim section parallax*/
+
+/*final-section*/
+
+.final-section{
+    padding: 50px 2%;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+.final-section h2{
+    position: relative;
+    font-weight: lighter;
+    color: #141405;
+    font-size: 25px;
+}
+
+.final-section h2 > .border-efeito{
+    width: 70px;
+    height: 2px;
+    background: #141405;
+    position: absolute;
+}
+
+.contato input[type=text]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #141405;
+    padding-left: 8px;
+    margin-top: 32px;
+}
+
+.contato input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #141405;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
+.contato textarea{
+    width: 100%;
+    height: 195px;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #141405;
+}
+
+.contato input[type=submit]{
+    width: 120px;
+    height: 45px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #2692ff;
+    color: #f2f2ce;
+    border: 0;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    text-shadow: #141405;
+}
+
+.equipe-single{
+    box-shadow: 10px 9px 5px -8px rgba(0, 0, 0, 0.75);
+    border: 1px solid #141405;
+    min-height: 300px;
+}
+
+.equipe-single .top-user{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #141405;
+}
+
+.box-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('../images/actor1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.descricao-user-box p{
+    padding-top: 5px;
+}
+/*fim final-section*/
+
+@media screen and (max-width: 768px){
+    .box-planos-single{
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .w50{
+        width: 100%;
+        margin: 30px 0;
+    }
+}
